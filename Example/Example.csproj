@@ -48,11 +48,35 @@
   <ItemGroup>
     <Compile Include="Classes\SQLclass.cs" />
     <Compile Include="Classes\StaticVars.cs" />
+    <Compile Include="Forms\add_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\add_book.Designer.cs">
+      <DependentUpon>add_book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Autorization.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Autorization.Designer.cs">
       <DependentUpon>Autorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\book_info_panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\book_info_panel.Designer.cs">
+      <DependentUpon>book_info_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\catalog_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\catalog_form.Designer.cs">
+      <DependentUpon>catalog_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\edit_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\edit_book.Designer.cs">
+      <DependentUpon>edit_book.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainWindows.cs">
       <SubType>Form</SubType>
@@ -62,8 +86,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\add_book.resx">
+      <DependentUpon>add_book.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Autorization.resx">
       <DependentUpon>Autorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\book_info_panel.resx">
+      <DependentUpon>book_info_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\catalog_form.resx">
+      <DependentUpon>catalog_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\edit_book.resx">
+      <DependentUpon>edit_book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainWindows.resx">
       <DependentUpon>MainWindows.cs</DependentUpon>

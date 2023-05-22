@@ -18,6 +18,8 @@ namespace Example.Forms
         public MainWindows()
         {
             InitializeComponent();
+
+            StaticVars.panel = this.panel1;
         }
 
         private void MainWindows_Load(object sender, EventArgs e)
@@ -151,6 +153,43 @@ namespace Example.Forms
                 MessageBox.Show(ex.Message);
                 throw;
             }
+        }
+
+        private void MainWindows_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            Autorization autorization = new Autorization();
+            autorization.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            add_book add_Book = new add_book() { Dock = DockStyle.Fill, TopMost = true, TopLevel = false };
+            panel1.Controls.Add(add_Book);
+            add_Book.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            edit_book edit_Book = new edit_book() { Dock = DockStyle.Fill, TopMost = true, TopLevel = false };
+            panel1.Controls.Add(edit_Book);
+            edit_Book.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            catalog_form catalog_Form = new catalog_form() { Dock = DockStyle.Fill, TopMost = true, TopLevel = false };
+            panel1.Controls.Add(catalog_Form);
+            catalog_Form.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            StaticVars.role_user = 1;
+            MessageBox.Show("1");
         }
     }
 }

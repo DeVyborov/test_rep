@@ -81,5 +81,10 @@ namespace Example
                 throw;
             }
         }
+
+        private void Autorization_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

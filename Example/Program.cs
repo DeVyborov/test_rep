@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Example.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Example
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Autorization());
+            Application.Run(new MainWindows());
         }
     }
 }
